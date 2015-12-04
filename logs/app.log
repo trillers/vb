@@ -175,3 +175,474 @@
      handleMessage: [Function: acceptDeliveryOrReturn],
      consumers: {},
      ch: 2 } }
+[2015-12-04 14:49:15.115] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 14:49:15.118] [INFO] console - system is up
+[2015-12-04 14:49:15.122] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 14:50:45.865] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 14:50:45.868] [INFO] console - system is up
+[2015-12-04 14:50:45.872] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 14:52:28.539] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 14:52:28.547] [INFO] console - system is up
+[2015-12-04 14:52:28.554] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 14:52:28.786] [ERROR] console - Potentially unhandled rejection [1] TypeError: undefined is not a function
+    at /Users/bjhl/dev/codebase/vb/src/modules/broker/bot.js:20:17
+    at tryCatchReject (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/makePromise.js:840:30)
+    at runContinuation1 (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/makePromise.js:799:4)
+    at Fulfilled.when (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/makePromise.js:590:4)
+    at Thenable.Pending.run (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/makePromise.js:481:13)
+    at Scheduler._drain (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/Scheduler.js:62:19)
+    at Scheduler.drain (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/Scheduler.js:27:9)
+    at process._tickCallback (node.js:355:11)
+[2015-12-04 14:52:52.215] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 14:52:52.218] [INFO] console - system is up
+[2015-12-04 14:52:52.221] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 14:52:52.493] [ERROR] console - Potentially unhandled rejection [1] TypeError: undefined is not a function
+    at /Users/bjhl/dev/codebase/vb/src/modules/broker/bot.js:20:17
+    at tryCatchReject (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/makePromise.js:840:30)
+    at runContinuation1 (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/makePromise.js:799:4)
+    at Fulfilled.when (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/makePromise.js:590:4)
+    at Thenable.Pending.run (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/makePromise.js:481:13)
+    at Scheduler._drain (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/Scheduler.js:62:19)
+    at Scheduler.drain (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/Scheduler.js:27:9)
+    at process._tickCallback (node.js:355:11)
+[2015-12-04 14:53:53.319] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 14:53:53.322] [INFO] console - system is up
+[2015-12-04 14:53:53.326] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 14:55:57.278] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 14:55:57.282] [INFO] console - system is up
+[2015-12-04 14:55:57.287] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 14:55:57.474] [INFO] console - { nm: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } },
+  bot: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } },
+  agent: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } } }
+[2015-12-04 16:04:00.825] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 16:04:00.828] [INFO] console - system is up
+[2015-12-04 16:04:00.832] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 16:04:01.002] [INFO] console - { nm: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } },
+  bot: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } },
+  agent: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } } }
+[2015-12-04 16:19:35.067] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 16:19:35.072] [INFO] console - system is up
+[2015-12-04 16:19:35.076] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 16:19:35.408] [INFO] console - { nm: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } },
+  bot: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } },
+  agent: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } } }
+[2015-12-04 16:31:02.548] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 16:31:02.552] [INFO] console - system is up
+[2015-12-04 16:31:02.556] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 16:31:02.923] [ERROR] console - Potentially unhandled rejection [1] TypeError: undefined is not a function
+    at /Users/bjhl/dev/codebase/vb/src/modules/broker/bot.js:20:17
+    at tryCatchReject (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/makePromise.js:840:30)
+    at runContinuation1 (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/makePromise.js:799:4)
+    at Fulfilled.when (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/makePromise.js:590:4)
+    at Thenable.Pending.run (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/makePromise.js:481:13)
+    at Scheduler._drain (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/Scheduler.js:62:19)
+    at Scheduler.drain (/Users/bjhl/dev/codebase/vb/node_modules/amqplib/node_modules/when/lib/Scheduler.js:27:9)
+    at process._tickCallback (node.js:355:11)
+[2015-12-04 16:31:19.099] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 16:31:19.104] [INFO] console - system is up
+[2015-12-04 16:31:19.110] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 16:31:19.484] [INFO] console - { nm: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } },
+  bot: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } },
+  agent: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } } }
+[2015-12-04 16:36:25.577] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 16:36:25.580] [INFO] console - system is up
+[2015-12-04 16:36:25.584] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 16:36:25.767] [INFO] console - { domain: null,
+  _events: {},
+  _maxListeners: undefined,
+  producerChannel: 
+   { domain: null,
+     _events: 
+      { ack: [Function],
+        nack: [Function],
+        delivery: [Function],
+        cancel: [Function] },
+     _maxListeners: undefined,
+     connection: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        stream: [Object],
+        muxer: [Object],
+        rest: <Buffer >,
+        frameMax: 4096,
+        sentSinceLastCheck: true,
+        recvSinceLastCheck: true,
+        expectSocketClose: false,
+        freeChannels: [Object],
+        channels: [Object],
+        channelMax: 65535,
+        heartbeat: 60,
+        heartbeater: [Object],
+        accept: [Function: mainAccept] },
+     reply: null,
+     pending: [],
+     lwm: 1,
+     unconfirmed: [],
+     handleMessage: [Function: acceptDeliveryOrReturn],
+     consumers: {},
+     ch: 1 },
+  consumerChannel: 
+   { domain: null,
+     _events: 
+      { ack: [Function],
+        nack: [Function],
+        delivery: [Function],
+        cancel: [Function] },
+     _maxListeners: undefined,
+     connection: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        stream: [Object],
+        muxer: [Object],
+        rest: <Buffer >,
+        frameMax: 4096,
+        sentSinceLastCheck: true,
+        recvSinceLastCheck: true,
+        expectSocketClose: false,
+        freeChannels: [Object],
+        channels: [Object],
+        channelMax: 65535,
+        heartbeat: 60,
+        heartbeater: [Object],
+        accept: [Function: mainAccept] },
+     reply: [Function: reply],
+     pending: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ],
+     lwm: 1,
+     unconfirmed: [],
+     handleMessage: [Function: acceptDeliveryOrReturn],
+     consumers: {},
+     ch: 2 } }

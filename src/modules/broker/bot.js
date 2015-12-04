@@ -1,14 +1,31 @@
+var brokerFactory = require('vc');
+var settings = require('base-settings');
+var amqp = require('amqplib');
+var rbqUri = 'amqp://' + settings.rabbitmq.username + ':' + settings.rabbitmq.password + '@' + settings.rabbitmq.host + ':' + settings.rabbitmq.port + '/' + settings.rabbitmq.vhost;
+var open = amqp.connect(rbqUri);
+
 var bot = module.exports = {
+
     //message broker
     broker: null,
+
     //create broker
-    init: function(bot, done){
-        require('./init').create(bot, done);
+    init: function(done){
+        brokerFactory.create(open, {nm: true, bot:true, agent: true}).then(function(broker){
+            bot.broker = broker.getNodeManager();
+            bot.bind(done);
+        })
     },
+
     //event binding
-    start: function(done){
-        require('./init').bindEvents(bot, done);
-        
+    bind: function(done){
+        console.log(this.broker);
+        //TODO bind events
+
+        //TODO receive a message from vk  - enqueue
+
+        //TODO receive a message which task completely from agent  - dequeue if null, walk dom
+
     }
 };
 
