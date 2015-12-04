@@ -1,0 +1,177 @@
+[2015-12-04 14:08:30.483] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 14:08:30.488] [INFO] console - system is up
+[2015-12-04 14:08:30.492] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 14:14:23.441] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 14:14:23.445] [INFO] console - system is up
+[2015-12-04 14:14:23.449] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 14:29:09.475] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 14:29:09.478] [INFO] console - system is up
+[2015-12-04 14:29:09.482] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 14:43:08.023] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 14:43:08.027] [INFO] console - system is up
+[2015-12-04 14:43:08.030] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 14:43:40.664] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 14:43:40.670] [INFO] console - system is up
+[2015-12-04 14:43:40.674] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 14:43:40.940] [INFO] console - { brokerNodeManager: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } },
+  brokerBot: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } },
+  brokerAgent: 
+   { domain: null,
+     _events: {},
+     _maxListeners: undefined,
+     producerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: null,
+        pending: [],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 1 },
+     consumerChannel: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        connection: [Object],
+        reply: [Function: reply],
+        pending: [Object],
+        lwm: 1,
+        unconfirmed: [],
+        handleMessage: [Function: acceptDeliveryOrReturn],
+        consumers: {},
+        ch: 2 } } }
+[2015-12-04 14:44:39.799] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-04 14:44:39.803] [INFO] console - system is up
+[2015-12-04 14:44:39.806] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-04 14:44:40.465] [INFO] console - { domain: null,
+  _events: {},
+  _maxListeners: undefined,
+  producerChannel: 
+   { domain: null,
+     _events: 
+      { ack: [Function],
+        nack: [Function],
+        delivery: [Function],
+        cancel: [Function] },
+     _maxListeners: undefined,
+     connection: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        stream: [Object],
+        muxer: [Object],
+        rest: <Buffer >,
+        frameMax: 4096,
+        sentSinceLastCheck: true,
+        recvSinceLastCheck: true,
+        expectSocketClose: false,
+        freeChannels: [Object],
+        channels: [Object],
+        channelMax: 65535,
+        heartbeat: 60,
+        heartbeater: [Object],
+        accept: [Function: mainAccept] },
+     reply: null,
+     pending: [],
+     lwm: 1,
+     unconfirmed: [],
+     handleMessage: [Function: acceptDeliveryOrReturn],
+     consumers: {},
+     ch: 1 },
+  consumerChannel: 
+   { domain: null,
+     _events: 
+      { ack: [Function],
+        nack: [Function],
+        delivery: [Function],
+        cancel: [Function] },
+     _maxListeners: undefined,
+     connection: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: undefined,
+        stream: [Object],
+        muxer: [Object],
+        rest: <Buffer >,
+        frameMax: 4096,
+        sentSinceLastCheck: true,
+        recvSinceLastCheck: true,
+        expectSocketClose: false,
+        freeChannels: [Object],
+        channels: [Object],
+        channelMax: 65535,
+        heartbeat: 60,
+        heartbeater: [Object],
+        accept: [Function: mainAccept] },
+     reply: [Function: reply],
+     pending: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ],
+     lwm: 1,
+     unconfirmed: [],
+     handleMessage: [Function: acceptDeliveryOrReturn],
+     consumers: {},
+     ch: 2 } }

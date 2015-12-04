@@ -1,0 +1,2 @@
+//http
+require('./src/app');
