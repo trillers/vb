@@ -27,11 +27,13 @@ describe('bot broker test', function(){
             var agentBroker = broker.getAgent();
             agentBroker.init('a1');
             agentBroker.init('a2');
-            agentBroker.onActionOut(function(err, command){
-                console.log(command);
+            agentBroker.onActionOut(function(err, action, msg){
+                console.log(action);
+                agentBroker.finish(msg);
             }, 'a1');
-            agentBroker.onActionOut(function(err, command){
-                console.log(command);
+            agentBroker.onActionOut(function(err, action, msg){
+                console.log(action);
+                agentBroker.finish(msg);
             }, 'a2');
             botBroker.actionOut({info: 'i am a agent action to a1 '}, 'a1');
             botBroker.actionOut({info: 'i am a agent action to a2 '}, 'a2');
@@ -39,6 +41,18 @@ describe('bot broker test', function(){
             setTimeout(function(){
                 done();
             }, 1000);
+        });
+    })
+
+    it('get the msg count of action out queue', function(done){
+        brokerPromise.then(function(broker){
+            var botBroker = broker.getBot();
+            var q = botBroker.getActionOutMsgCount('test');
+            q.then(function(count){
+                console.log(count);
+                assert.ok(count >= 0);
+                done();
+            })
         });
     })
 

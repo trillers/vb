@@ -107,4 +107,12 @@ AgentManager.prototype.listenCommand = function(id){
     brokerHelper.consume.call(this, this.consumerChannel, conf, id);
 };
 
+/**
+ * acknowledge msg has handled
+ * @param msg
+ */
+AgentManager.prototype.finish = function(msg){
+    brokerHelper.acknowledge(this.consumerChannel, msg);
+}
+
 module.exports = AgentManager;

@@ -646,3 +646,86 @@
      handleMessage: [Function: acceptDeliveryOrReturn],
      consumers: {},
      ch: 2 } }
+[2015-12-07 19:02:14.417] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-07 19:02:14.421] [INFO] console - system is up
+[2015-12-07 19:02:14.445] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 15:35:03.191] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 15:35:03.200] [INFO] console - system is up
+[2015-12-08 15:35:03.206] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 15:35:58.352] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 15:35:58.356] [INFO] console - system is up
+[2015-12-08 15:35:58.361] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 15:46:01.865] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 15:46:01.871] [INFO] console - system is up
+[2015-12-08 15:46:01.874] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 15:47:37.090] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 15:47:37.102] [INFO] console - system is up
+[2015-12-08 15:47:37.119] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 15:50:47.665] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 15:50:47.668] [INFO] console - system is up
+[2015-12-08 15:50:47.673] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 15:55:45.441] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 15:55:45.444] [INFO] console - system is up
+[2015-12-08 15:55:45.447] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 15:56:44.138] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 15:56:44.143] [INFO] console - system is up
+[2015-12-08 15:56:44.150] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 15:58:53.273] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 15:58:53.275] [INFO] console - system is up
+[2015-12-08 15:58:53.280] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 15:59:20.668] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 15:59:20.677] [INFO] console - system is up
+[2015-12-08 15:59:20.698] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 16:00:30.074] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 16:00:30.080] [INFO] console - system is up
+[2015-12-08 16:00:30.086] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 16:01:11.654] [INFO] console - ~~~~
+[2015-12-08 16:01:11.806] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 16:01:11.811] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 16:01:12.076] [INFO] console - system is up
+[2015-12-08 16:01:13.243] [INFO] console - {"CreateTime":1449561370805,"AgentId":"bot1","Command":"start","Intention":"login","Mode":"trusted"}
+[2015-12-08 16:01:13.243] [INFO] console - ~~~~~~~~~~~~~~~
+[2015-12-08 16:03:50.445] [INFO] console - ~~~~
+[2015-12-08 16:03:50.785] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 16:03:50.790] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 16:03:51.043] [INFO] console - system is up
+[2015-12-08 16:03:53.362] [INFO] console - {"CreateTime":1449561833204,"AgentId":"bot1","Command":"start","Intention":"login","Mode":"trusted"}
+[2015-12-08 16:03:53.363] [INFO] console - ~~~~~~~~~~~~~~~
+[2015-12-08 16:12:18.684] [INFO] console - {"CreateTime":1449562338616,"AgentId":"bot1","Command":"start","Intention":"login","Mode":"trusted"}
+[2015-12-08 16:12:18.684] [INFO] console - ~~~~~~~~~~~~~~~
+[2015-12-08 16:16:37.052] [INFO] console - {"CreateTime":1449562596935,"AgentId":"bot1","Command":"start","Intention":"login","Mode":"trusted"}
+[2015-12-08 16:16:37.053] [INFO] console - ~~~~~~~~~~~~~~~
+[2015-12-08 16:19:10.425] [INFO] console - {"CreateTime":1449562750337,"AgentId":"bot1","Command":"start","Intention":"login","Mode":"trusted"}
+[2015-12-08 16:19:10.425] [INFO] console - ~~~~~~~~~~~~~~~
+[2015-12-08 16:23:15.072] [INFO] console - ~~~~
+[2015-12-08 16:23:15.353] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 16:23:15.358] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 16:23:15.709] [INFO] console - system is up
+[2015-12-08 16:23:21.629] [INFO] console - {"CreateTime":1449563001493,"AgentId":"bot1","Command":"start","Intention":"login","Mode":"trusted"}
+[2015-12-08 16:23:21.630] [INFO] console - ~~~~~~~~~~~~~~~
+[2015-12-08 16:32:38.235] [INFO] console - ~~~~
+[2015-12-08 16:32:38.527] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 16:32:38.531] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 16:32:38.803] [INFO] console - system is up
+[2015-12-08 16:32:47.198] [INFO] console - {"CreateTime":1449563567059,"AgentId":"bot1","Command":"start","Intention":"login","Mode":"trusted"}
+[2015-12-08 16:32:47.199] [INFO] console - ~~~~~~~~~~~~~~~
+[2015-12-08 16:35:28.395] [INFO] console - ~~~~
+[2015-12-08 16:35:28.494] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 16:35:28.498] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 16:35:28.747] [INFO] console - system is up
+[2015-12-08 16:36:00.556] [INFO] console - {"CreateTime":1449563760291,"AgentId":"bot1","Command":"start","Intention":"login","Mode":"trusted"}
+[2015-12-08 16:36:00.556] [INFO] console - ~~~~~~~~~~~~~~~
+[2015-12-08 16:37:09.357] [INFO] console - {"CreateTime":1449563829213,"AgentId":"bot1","Command":"start","Intention":"login","Mode":"trusted"}
+[2015-12-08 16:37:09.358] [INFO] console - ~~~~~~~~~~~~~~~
+[2015-12-08 16:46:16.262] [INFO] console - ~~~~
+[2015-12-08 16:46:16.389] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-08 16:46:16.396] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-08 16:46:16.800] [INFO] console - system is up
+[2015-12-08 16:46:37.882] [INFO] console - {"CreateTime":1449564397761,"AgentId":"bot1","Command":"start","Intention":"login","Mode":"trusted"}
+[2015-12-08 16:46:37.883] [INFO] console - ~~~~~~~~~~~~~~~
+[2015-12-08 16:48:42.896] [INFO] console - {"CreateTime":1449564522887,"AgentId":"bot1","Command":"start","Intention":"login","Mode":"trusted"}
+[2015-12-08 16:48:42.897] [INFO] console - ~~~~~~~~~~~~~~~
+[2015-12-08 16:51:21.171] [INFO] console - {"CreateTime":1449564681036,"AgentId":"bot1","Command":"start","Intention":"login","Mode":"trusted"}
+[2015-12-08 16:51:21.171] [INFO] console - ~~~~~~~~~~~~~~~
+[2015-12-08 16:53:38.166] [INFO] console - {"CreateTime":1449564818099,"AgentId":"bot1","Command":"start","Intention":"login","Mode":"trusted"}
+[2015-12-08 16:53:38.167] [INFO] console - ~~~~~~~~~~~~~~~

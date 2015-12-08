@@ -17,7 +17,7 @@ var system = require('./system');
 system.addMember('application', app);
 
 //init broker
-require('../modules/broker');
+require('../modules/broker')(app);
 
 app.use(logging.generatorFunc);
 app.use(views(path.join(__dirname, '../views'), { map: { html: 'swig' }}));

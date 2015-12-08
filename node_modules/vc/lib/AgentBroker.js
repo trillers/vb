@@ -114,4 +114,12 @@ Agent.prototype.listenActionOut = function(id){
     brokerHelper.consume.call(this, this.consumerChannel, conf, id);
 };
 
+/**
+ * acknowledge msg has handled
+ * @param msg
+ */
+Agent.prototype.finish = function(msg){
+    brokerHelper.acknowledge(this.consumerChannel, msg);
+}
+
 module.exports = Agent;

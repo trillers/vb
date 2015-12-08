@@ -29,7 +29,7 @@ describe('agent broker test', function(){
             botBroker.onAgentStatusChange(function(err, changeInfo){
                 console.log(changeInfo);
             })
-            nodeManagerBroker.onAgentStatusChange(function(err, changeInfo){
+            nodeManagerBroker.onAgentStatusChange(function(err, changeInfo, msg){
                 console.log(changeInfo);
             })
             agentBroker.agentStatusChange({info: 'i am a agent status change to node manager'});

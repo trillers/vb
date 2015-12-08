@@ -148,4 +148,12 @@ NodeManager.prototype.listenCommand = function(){
     brokerHelper.consume.call(this, this.consumerChannel, conf);
 };
 
+/**
+ * acknowledge msg has handled
+ * @param msg
+ */
+NodeManager.prototype.finish = function(msg){
+    brokerHelper.acknowledge(this.consumerChannel, msg);
+}
+
 module.exports = NodeManager;
