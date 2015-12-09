@@ -11,7 +11,6 @@ var bot = module.exports = {
 
     //create broker
     init: function(done){
-        console.log("~~~~")
         brokerFactory.create(open, {bot:true}).then(function(broker){
             bot.broker = broker.getBot();
             bot.bind();
@@ -24,12 +23,12 @@ var bot = module.exports = {
         var me = this;
         //forward command to vn
         me.broker.onClientCommand(function(err, data){
-            console.log("~~~~~~~~~~~~~~~");
             me.broker.command(data);
         });
         //TODO get message - action in from va
         me.broker.onActionIn(function(err, data){
             //send it to vk
+            me.broker.
         });
         //TODO receive a action from vk  - enqueue
         me.broker.onClientAction(function(err, data){
