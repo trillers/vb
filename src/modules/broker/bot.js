@@ -28,7 +28,10 @@ var bot = module.exports = {
         //TODO get message - action in from va
         me.broker.onActionIn(function(err, data){
             //send it to vk
-            me.broker.
+            if(err){
+                console.error(err);
+            }
+            me.broker.clientActionIn(data);
         });
         //TODO receive a action from vk  - enqueue
         me.broker.onClientAction(function(err, data){
