@@ -5,18 +5,38 @@ var amqp = require('amqplib');
 var rbqUri = 'amqp://' + settings.rabbitmq.username + ':' + settings.rabbitmq.password + '@' + settings.rabbitmq.host + ':' + settings.rabbitmq.port + '/' + settings.rabbitmq.vhost;
 var open = amqp.connect(rbqUri);
 var util = require('./util');
+var kvs = require('./kvs');
 
 var bot = module.exports = {
     //message broker
     broker: null,
+    agentsMap: {},
 
     //create broker
     init: function(done){
+        var me = this;
         vc.create(open, {bot:true}).then(function(broker){
             bot.broker = broker.getBot();
             bot.bind();
+            setInterval(loopAgentToGetCookie, 5*60*1000);
+            loopAgentToGetCookie();
+            function loopAgentToGetCookie(){
+                kvs.getAllAgents(function(err, arr){
+                    me.agentsMap = arr;
+                    if(me.agentsMap && Object.keys(me.agentsMap).length>0) {
+                        Object.keys(me.agentsMap).forEach(cookieRequest);
+                    }
+                });
+            }
+            function cookieRequest(agentId){
+                me.broker.actionOut({
+                    Action: 'cookies-request',
+                    CreateTime: (new Date()).getTime(),
+                    AgentId: agentId
+                }, agentId)
+            }
             done();
-        })
+        });
     },
 
     //event binding
@@ -24,13 +44,32 @@ var bot = module.exports = {
         var me = this;
         //forward command to vn
         me.broker.onClientCommand(function(err, data){
-            console.log(data)
-            me.broker.command(data);
+            if(data.Command === 'start'){
+                kvs.getCookiesByAgentId(data.AgentId, function(err, cookies){
+                    if(cookies && Object.keys(cookies).length >0){
+                        var arr = [];
+                        Object.keys(cookies).forEach(function(i){
+                            arr.push(JSON.parse(cookies[i]));
+                        });
+                        data.Cookies = arr;
+                        me.broker.command(data);
+                        return;
+                    }
+                    me.broker.command(data);
+                })
+            }else{
+                me.broker.command(data);
+            }
         });
         //TODO get message - action in from va
         me.broker.onActionIn(function(err, data){
             console.log("***************");
             console.log(data)
+            if(data.Action === 'cookies-request'){
+                if(data.Data) {
+                    return kvs.saveCookiesByAgentId(data.AgentId, data.Data, function(){});
+                }
+            }
             //send it to vk
             if(err){
                 console.error(err);
@@ -44,9 +83,6 @@ var bot = module.exports = {
             var prefix = data.Action.split('-')[0],
                 type = data.Action.split('-')[1],
                 to = data.Action.split('-')[2];
-            console.log("prefix--------" + prefix);
-            console.log("type----------" + type);
-            console.log("to------------" + to);
             if(prefix === 'broadcast'){
                 handleMultiActions(data, type, to)
             }else{
@@ -61,6 +97,9 @@ var bot = module.exports = {
             console.log('receive a cmd feedback***********')
             console.error(data);
             if(data.Command === CONST.NODE.COMMAND.START && data.Code === 200){
+                //monitor
+                me.agentsMap[data.AgentId] = true;
+
                 me.broker.getActionOutMsgCount(data.AgentId).then(function(count){
                     if(count <= 0){
                         me.broker.actionOut({
@@ -69,7 +108,7 @@ var bot = module.exports = {
                             AgentId: data.AgentId
                         }, data.AgentId)
                     }
-                })
+                });
             }
         });
 
@@ -99,7 +138,6 @@ var bot = module.exports = {
                 util.objExclude(json, listField);
                 json.Action = 'send-' + type;
                 json['BuId'] = item;
-                console.log(json)
                 me.broker.actionOut(json, json.AgentId)
             });
         }
