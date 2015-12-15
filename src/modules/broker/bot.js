@@ -42,6 +42,9 @@ var bot = module.exports = {
     //event binding
     bind: function(){
         var me = this;
+        me.broker.onAgentStatusChange(function(err, data){
+            me.broker.clientAgentStatusChange(data, data.AgentId);
+        });
         //forward command to vn
         me.broker.onClientCommand(function(err, data){
             if(data.Command === 'start'){

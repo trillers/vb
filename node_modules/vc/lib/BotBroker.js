@@ -119,6 +119,14 @@ Bot.prototype.command = function(command){
 };
 
 /**
+ *
+ */
+Bot.prototype.clientAgentStatusChange = function(action, id){
+    var conf = messageDefinitions.bot.clientAgentStatusChange;
+    brokerHelper.produce.call(this, this.consumerChannel, conf, action, id);
+};
+
+/**
  * send action to agent
  * @param action
  * @param id
