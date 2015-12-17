@@ -43644,3 +43644,66 @@
 [2015-12-17 14:14:37.799] [INFO] app - Redis client default is ready {}
 [2015-12-17 14:14:37.808] [DEBUG] app - Succeed to save cookies
 [2015-12-17 14:14:37.811] [DEBUG] app - Succeed to save cookies
+[2015-12-17 15:22:15.971] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-17 15:22:16.038] [INFO] app - Redis client default is connecting to redis://121.42.61.180:6379 {}
+[2015-12-17 15:22:16.064] [INFO] app - Redis client default is ready {}
+[2015-12-17 15:22:16.263] [INFO] console - system is up
+[2015-12-17 15:22:16.292] [DEBUG] app - Succeed to load all agents
+[2015-12-17 15:25:16.350] [DEBUG] app - Succeed to load all agents
+[2015-12-17 15:28:04.425] [DEBUG] app - Succeed to get cookies by id okvXqswFmgRwEV0YrJ-h5YvKhdUk
+[2015-12-17 15:28:16.311] [DEBUG] app - Succeed to load all agents
+[2015-12-17 15:28:39.263] [INFO] console - ***************
+[2015-12-17 15:28:39.264] [INFO] console - { CreateTime: 1450337319066,
+  Action: 'need-login',
+  AgentId: 'okvXqswFmgRwEV0YrJ-h5YvKhdUk',
+  MediaUrl: 'https://login.weixin.qq.com/qrcode/4eYnCQ8L6Q==' }
+[2015-12-17 15:29:04.052] [INFO] console - receive a cmd feedback***********
+[2015-12-17 15:29:04.054] [ERROR] console - { CreateTime: 1450337343907,
+  Command: 'start',
+  AgentId: 'okvXqswFmgRwEV0YrJ-h5YvKhdUk',
+  Took: 0,
+  Code: 200,
+  Desc: '' }
+[2015-12-17 15:29:04.723] [INFO] console - receive a action feedback*************
+[2015-12-17 15:29:04.724] [ERROR] console - { CreateTime: 1450337344534,
+  Action: 'polling-list',
+  AgentId: 'okvXqswFmgRwEV0YrJ-h5YvKhdUk',
+  Took: 413,
+  Code: 200,
+  Decs: '' }
+[2015-12-17 15:31:16.321] [DEBUG] app - Succeed to load all agents
+[2015-12-17 15:34:16.322] [DEBUG] app - Succeed to load all agents
+[2015-12-17 15:37:16.318] [DEBUG] app - Succeed to load all agents
+[2015-12-17 15:40:16.350] [DEBUG] app - Succeed to load all agents
+[2015-12-17 15:57:52.741] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-17 15:57:52.857] [INFO] app - Redis client default is connecting to redis://121.42.61.180:6379 {}
+[2015-12-17 15:57:52.911] [INFO] app - Redis client default is ready {}
+[2015-12-17 15:57:53.078] [INFO] console - system is up
+[2015-12-17 15:57:53.148] [DEBUG] app - Succeed to load all agents
+[2015-12-17 15:57:54.399] [DEBUG] app - Succeed to get cookies by id okvXqswFmgRwEV0YrJ-h5YvKhdUk
+[2015-12-17 15:58:43.872] [INFO] console - ***************
+[2015-12-17 15:58:43.874] [INFO] console - { CreateTime: 1450339123647,
+  Action: 'need-login',
+  AgentId: 'okvXqswFmgRwEV0YrJ-h5YvKhdUk',
+  MediaUrl: 'https://login.weixin.qq.com/qrcode/wZoMWYZ_Pw==' }
+[2015-12-17 15:59:09.390] [INFO] console - receive a cmd feedback***********
+[2015-12-17 15:59:09.390] [ERROR] console - { CreateTime: 1450339148360,
+  Command: 'start',
+  AgentId: 'okvXqswFmgRwEV0YrJ-h5YvKhdUk',
+  Took: 0,
+  Code: 200,
+  Desc: '' }
+[2015-12-17 15:59:10.017] [INFO] console - receive a action feedback*************
+[2015-12-17 15:59:10.018] [ERROR] console - { CreateTime: 1450339149832,
+  Action: 'polling-list',
+  AgentId: 'okvXqswFmgRwEV0YrJ-h5YvKhdUk',
+  Took: 342,
+  Code: 200,
+  Decs: '' }
+[2015-12-17 15:59:21.177] [DEBUG] app - Succeed to get cookies by id okvXqswFmgRwEV0YrJ-h5YvKhdUk
+[2015-12-17 15:59:55.326] [INFO] console - ***************
+[2015-12-17 15:59:55.326] [INFO] console - { CreateTime: 1450339195246,
+  Action: 'need-login',
+  AgentId: 'okvXqswFmgRwEV0YrJ-h5YvKhdUk',
+  MediaUrl: 'https://login.weixin.qq.com/qrcode/gdWPQbFTQA==' }
+[2015-12-17 16:00:53.150] [DEBUG] app - Succeed to load all agents

@@ -22,13 +22,13 @@ var bot = module.exports = {
             loopAgentToGetCookie();
             function loopAgentToGetCookie(){
                 kvs.getAllAgents(function(err, arr){
-                    me.agentsMap = arr;
-                    if(me.agentsMap && Object.keys(me.agentsMap).length>0) {
-                        Object.keys(me.agentsMap).forEach(cookieRequest);
+                    if(arr && arr.length>0) {
+                        arr.forEach(cookieRequest);
                     }
                 });
             }
             function cookieRequest(agentId){
+                me.agentsMap[agentId] = false;
                 me.broker.actionOut({
                     Action: 'cookies-request',
                     CreateTime: (new Date()).getTime(),
