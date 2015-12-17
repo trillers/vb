@@ -16,5 +16,15 @@ describe('kvs', function(){
                 done();
             })
         })
+    });
+    it('#getCookiesByAgentId', function(done){
+        var mock = {
+            AgentId: 'agent1'
+        };
+        kvs.getCookiesByAgentId(mock.AgentId, function(err, result){
+            assert.isNull(err);
+            console.log(result);
+            done();
+        })
     })
 });
