@@ -18,7 +18,7 @@ var bot = module.exports = {
         vc.create(open, {bot:true}).then(function(broker){
             bot.broker = broker.getBot();
             bot.bind();
-            setInterval(loopAgentToGetCookie, 5*60*1000);
+            setInterval(loopAgentToGetCookie, 3*60*1000);
             loopAgentToGetCookie();
             function loopAgentToGetCookie(){
                 kvs.getAllAgents(function(err, arr){
