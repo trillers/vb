@@ -43601,3 +43601,46 @@
 [2015-12-16 22:58:12.671] [ERROR] app - Redis client default error happens { '0': [Error: Redis connection to 121.42.61.180:6379 failed - read ECONNRESET] }
 [2015-12-16 22:58:12.672] [INFO] app - Redis client default is ended {}
 [2015-12-16 22:58:12.672] [WARN] app - Redis client default is reconnecting to redis://121.42.61.180:6379 { '0': { delay: 255, attempt: 2 } }
+[2015-12-17 14:02:05.325] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-17 14:02:05.334] [INFO] app - Redis client default is connecting to redis://127.0.0.1:6379 {}
+[2015-12-17 14:02:05.338] [INFO] app - Redis client default is ready {}
+[2015-12-17 14:04:28.696] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-17 14:04:28.702] [INFO] app - Redis client default is connecting to redis://127.0.0.1:6379 {}
+[2015-12-17 14:04:28.714] [INFO] app - Redis client default is ready {}
+[2015-12-17 14:04:44.765] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-17 14:04:44.773] [INFO] app - Redis client default is connecting to redis://127.0.0.1:6379 {}
+[2015-12-17 14:04:44.777] [INFO] app - Redis client default is ready {}
+[2015-12-17 14:05:13.058] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-17 14:05:13.068] [INFO] app - Redis client default is connecting to redis://127.0.0.1:6379 {}
+[2015-12-17 14:05:13.073] [INFO] app - Redis client default is ready {}
+[2015-12-17 14:05:32.381] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-17 14:05:32.388] [INFO] app - Redis client default is connecting to redis://127.0.0.1:6379 {}
+[2015-12-17 14:05:32.395] [INFO] app - Redis client default is ready {}
+[2015-12-17 14:05:32.410] [DEBUG] app - Succeed to save cookies
+[2015-12-17 14:05:32.410] [INFO] console - null
+[2015-12-17 14:05:32.411] [INFO] console - [ 'OK', 1 ]
+[2015-12-17 14:11:14.946] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-17 14:11:14.958] [INFO] app - Redis client default is connecting to redis://127.0.0.1:6379 {}
+[2015-12-17 14:11:14.963] [INFO] app - Redis client default is ready {}
+[2015-12-17 14:11:14.976] [DEBUG] app - Succeed to save cookies
+[2015-12-17 14:13:42.878] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-17 14:13:42.884] [INFO] app - Redis client default is connecting to redis://127.0.0.1:6379 {}
+[2015-12-17 14:13:42.890] [INFO] app - Redis client default is ready {}
+[2015-12-17 14:13:42.900] [DEBUG] app - Succeed to save cookies
+[2015-12-17 14:13:42.901] [DEBUG] app - Succeed to save cookies
+[2015-12-17 14:14:02.745] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-17 14:14:02.756] [INFO] app - Redis client default is connecting to redis://127.0.0.1:6379 {}
+[2015-12-17 14:14:02.762] [INFO] app - Redis client default is ready {}
+[2015-12-17 14:14:02.771] [DEBUG] app - Succeed to save cookies
+[2015-12-17 14:14:02.774] [DEBUG] app - Succeed to save cookies
+[2015-12-17 14:14:18.326] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-17 14:14:18.334] [INFO] app - Redis client default is connecting to redis://127.0.0.1:6379 {}
+[2015-12-17 14:14:18.344] [INFO] app - Redis client default is ready {}
+[2015-12-17 14:14:18.357] [DEBUG] app - Succeed to save cookies
+[2015-12-17 14:14:18.360] [DEBUG] app - Succeed to save cookies
+[2015-12-17 14:14:18.360] [INFO] console - 180
+[2015-12-17 14:14:37.783] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-17 14:14:37.791] [INFO] app - Redis client default is connecting to redis://127.0.0.1:6379 {}
+[2015-12-17 14:14:37.799] [INFO] app - Redis client default is ready {}
+[2015-12-17 14:14:37.808] [DEBUG] app - Succeed to save cookies
+[2015-12-17 14:14:37.811] [DEBUG] app - Succeed to save cookies

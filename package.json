@@ -23,5 +23,9 @@
     "amqplib": "0.4.0",
     "vc": "git+https://henryleu:c148960791ab761064ecfbb07b7fdf582ff008df@github.com/trillers/vc.git",
     "base-settings": "git+https://henryleu:c148960791ab761064ecfbb07b7fdf582ff008df@github.com:trillers/base-settings.git"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
   }
 }

@@ -34,17 +34,30 @@ var kvs ={
     },
     saveCookiesByAgentId: function(agentId, cookies, callback){
         var key = agentIdToCookiesKey(agentId);
-        var arr = []
-        cookies.map(function(i){
-            arr.push(JSON.stringify(i));
+        var arr = cookies.map(function(i){
+            return JSON.stringify(i);
         });
-        redis.hmset(key, arr, function(err, result){
+        redis
+            .multi()
+            .hmset(key, arr)
+            .expire(key, 3*60)
+            .exec(function(err, result){
+                cbUtil.logCallback(
+                    err,
+                    'Fail to save cookies err: ' + err,
+                    'Succeed to save cookies' );
+                cbUtil.handleSingleValue(callback, err, result);
+            });
+    },
+    getCookiesExpire: function(agentId, callback){
+        var key = agentIdToCookiesKey(agentId);
+        redis.ttl(key, function(err, result){
             cbUtil.logCallback(
                 err,
                 'Fail to save cookies err: ' + err,
                 'Succeed to save cookies' );
             cbUtil.handleSingleValue(callback, err, result);
-        });
+        })
     },
     delCookiesByAgentId: function(agentId, callback){
         var key = agentIdToCookiesKey(agentId);
