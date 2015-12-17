@@ -70,7 +70,7 @@ var bot = module.exports = {
             console.log(data)
             if(data.Action === 'cookies-request'){
                 if(data.Data) {
-                    return kvs.saveCookiesByAgentId(data.AgentId, data.Data, function(){});
+                    return kvs.saveCookiesByAgentId(data.AgentId, data.Data, function noop(){});
                 }
             }
             //send it to vk
