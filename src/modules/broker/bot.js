@@ -71,6 +71,8 @@ var bot = module.exports = {
             if(data.Action === 'cookies-request'){
                 if(data.Data) {
                     return kvs.saveCookiesByAgentId(data.AgentId, data.Data, function noop(){});
+                }else{
+                    return;
                 }
             }
             //send it to vk
