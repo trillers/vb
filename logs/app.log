@@ -6760,3 +6760,70 @@
   Took: 142,
   Code: 200,
   Decs: '' }
+[2015-12-21 18:06:37.140] [INFO] app - The server is binding on undefined and listening on port undefined in development
+[2015-12-21 18:06:37.175] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-21 18:06:37.176] [INFO] app - Redis client default is connecting to redis://127.0.0.1:6379 {}
+[2015-12-21 18:06:37.179] [INFO] console - Warning: Redis server does not require a password, but a password was supplied.
+[2015-12-21 18:06:37.181] [INFO] app - Redis client default is ready {}
+[2015-12-21 18:06:37.407] [INFO] console - system is up
+[2015-12-21 18:06:37.409] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:09:37.416] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:12:37.425] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:15:37.434] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:18:37.442] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:21:37.447] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:24:37.456] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:27:37.467] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:30:37.477] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:33:37.486] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:36:37.492] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:39:37.498] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:42:37.510] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:45:37.516] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:48:37.522] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:51:37.528] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:54:37.537] [DEBUG] app - Succeed to load all agents
+[2015-12-21 18:57:37.544] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:00:37.549] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:03:37.559] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:06:37.565] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:09:37.569] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:12:37.578] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:15:37.584] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:18:37.592] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:21:37.599] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:24:37.607] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:27:37.613] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:30:37.620] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:33:37.625] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:36:37.630] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:39:37.638] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:42:37.643] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:45:37.649] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:48:37.656] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:51:37.661] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:54:37.668] [DEBUG] app - Succeed to load all agents
+[2015-12-21 19:57:37.677] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:00:37.685] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:03:37.692] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:06:37.703] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:09:37.709] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:12:37.717] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:15:37.727] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:18:37.735] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:21:37.740] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:24:37.750] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:27:37.757] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:30:37.769] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:33:37.778] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:36:37.787] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:39:37.794] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:42:37.806] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:45:37.812] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:48:37.822] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:51:37.827] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:54:37.834] [DEBUG] app - Succeed to load all agents
+[2015-12-21 20:57:37.840] [DEBUG] app - Succeed to load all agents
+[2015-12-21 21:00:37.847] [DEBUG] app - Succeed to load all agents
+[2015-12-21 21:03:37.857] [DEBUG] app - Succeed to load all agents
+[2015-12-21 21:06:37.866] [DEBUG] app - Succeed to load all agents

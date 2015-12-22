@@ -117,8 +117,6 @@ var bot = module.exports = {
 
         //TODO receive a message which task completely from agent  - dequeue if null, walk dom
         me.broker.onActionFeedback(function(err, data){
-            console.log("receive a action feedback*************");
-            console.error(data);
             me.broker.getActionOutMsgCount(data.AgentId).then(function(count){
                 if(count <= 0){
                     setTimeout(function(){
