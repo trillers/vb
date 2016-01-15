@@ -18,8 +18,8 @@ var bot = module.exports = {
         vc.create(open, {bot:true}).then(function(broker){
             bot.broker = broker.getBot();
             bot.bind();
-            setInterval(me.loopAgentToGetCookie, 3*60*1000);
-            setInterval(me.watchConnectStat, 5*1000);
+            setInterval(me.loopAgentToGetCookie.bind(me), 3*60*1000);
+            setInterval(me.watchConnectStat.bind(me), 10*1000);
             me.loopAgentToGetCookie();
             me.watchConnectStat();
             done();
