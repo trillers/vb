@@ -20,6 +20,7 @@ var bot = module.exports = {
             bot.bind();
             setInterval(me.loopAgentToGetCookie.bind(me), 3*60*1000);
             setInterval(me.watchConnectStat.bind(me), 10*1000);
+            setInterval(me.ensureConnect.bind(me), 5*60*1000);
             me.loopAgentToGetCookie();
             me.watchConnectStat();
             done();
@@ -43,7 +44,23 @@ var bot = module.exports = {
             }, agentId)
         }
     },
-
+    ensureConnect: function(){
+        //TODO enqueue only no such event in queue
+        var me = this;
+        kvs.getAllAgents(function(err, arr){
+            if(arr && arr.length>0) {
+                arr.forEach(connectStatRequest);
+            }
+        });
+        function connectStatRequest(agentId){
+            me.agentsMap[agentId] = false;
+            me.broker.actionOut({
+                Action: 'ensure-connect',
+                CreateTime: (new Date()).getTime(),
+                AgentId: agentId
+            }, agentId)
+        }
+    },
     watchConnectStat: function(){
         //TODO enqueue only no such event in queue
         var me = this;
