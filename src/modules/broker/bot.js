@@ -18,25 +18,65 @@ var bot = module.exports = {
         vc.create(open, {bot:true}).then(function(broker){
             bot.broker = broker.getBot();
             bot.bind();
-            setInterval(loopAgentToGetCookie, 3*60*1000);
-            loopAgentToGetCookie();
-            function loopAgentToGetCookie(){
-                kvs.getAllAgents(function(err, arr){
-                    if(arr && arr.length>0) {
-                        arr.forEach(cookieRequest);
-                    }
-                });
-            }
-            function cookieRequest(agentId){
-                me.agentsMap[agentId] = false;
-                me.broker.actionOut({
-                    Action: 'cookies-request',
-                    CreateTime: (new Date()).getTime(),
-                    AgentId: agentId
-                }, agentId)
-            }
+            setInterval(me.loopAgentToGetCookie.bind(me), 3*60*1000);
+            setInterval(me.watchConnectStat.bind(me), 10*1000);
+            setInterval(me.ensureConnect.bind(me), 5*60*1000);
+            me.loopAgentToGetCookie();
+            me.watchConnectStat();
             done();
         });
+    },
+
+    loopAgentToGetCookie: function(){
+        //TODO enqueue only no such event in queue
+        var me = this;
+        kvs.getAllAgents(function(err, arr){
+            if(arr && arr.length>0) {
+                arr.forEach(cookieRequest);
+            }
+        });
+        function cookieRequest(agentId){
+            me.agentsMap[agentId] = false;
+            me.broker.actionOut({
+                Action: 'cookies-request',
+                CreateTime: (new Date()).getTime(),
+                AgentId: agentId
+            }, agentId)
+        }
+    },
+    ensureConnect: function(){
+        //TODO enqueue only no such event in queue
+        var me = this;
+        kvs.getAllAgents(function(err, arr){
+            if(arr && arr.length>0) {
+                arr.forEach(connectStatRequest);
+            }
+        });
+        function connectStatRequest(agentId){
+            me.agentsMap[agentId] = false;
+            me.broker.actionOut({
+                Action: 'ensure-connect',
+                CreateTime: (new Date()).getTime(),
+                AgentId: agentId
+            }, agentId)
+        }
+    },
+    watchConnectStat: function(){
+        //TODO enqueue only no such event in queue
+        var me = this;
+        kvs.getAllAgents(function(err, arr){
+            if(arr && arr.length>0) {
+                arr.forEach(connectStatRequest);
+            }
+        });
+        function connectStatRequest(agentId){
+            me.agentsMap[agentId] = false;
+            me.broker.actionOut({
+                Action: 'watch-connectstat',
+                CreateTime: (new Date()).getTime(),
+                AgentId: agentId
+            }, agentId)
+        }
     },
 
     //event binding
@@ -71,6 +111,8 @@ var bot = module.exports = {
             if(data.Action === 'cookies-request'){
                 if(data.Data) {
                     return kvs.saveCookiesByAgentId(data.AgentId, data.Data, function noop(){});
+                }else{
+                    return;
                 }
             }
             //send it to vk
